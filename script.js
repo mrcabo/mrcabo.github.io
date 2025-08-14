@@ -416,8 +416,9 @@ document.addEventListener("DOMContentLoaded", function () {
     • Smooth animations and transitions
     • Responsive design principles
     • Accessible navigation and forms
+    • Resume download functionality
 
-    Feel free to reach out if you have any questions!
+    Don't forget to download my resume! Feel free to reach out if you have any questions!
     `);
 });
 
