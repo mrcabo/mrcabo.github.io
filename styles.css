@@ -565,6 +565,14 @@ body {
     margin-bottom: 0.25rem;
 }
 
+.timeline-location {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--text-light);
+    margin-bottom: 0.25rem;
+    font-style: italic;
+}
+
 .timeline-date {
     font-size: 0.875rem;
     color: var(--text-muted);
@@ -592,10 +600,93 @@ body {
     border: 1px solid var(--border-color);
 }
 
+/* Education Section */
+.education {
+    padding: 6rem 0;
+    background: var(--bg-light);
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.education-item {
+    background: var(--bg-white);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.education-header {
+    margin-bottom: 1.5rem;
+}
+
+.education-degree {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.education-school {
+    display: block;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+}
+
+.education-location {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin-bottom: 0.25rem;
+}
+
+.education-date {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.education-description {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.education-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.education-skill {
+    background: var(--bg-light);
+    color: var(--text-dark);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border: 1px solid var(--border-color);
+}
+
 /* Projects Section */
 .projects {
     padding: 6rem 0;
-    background: var(--bg-light);
+    background: var(--bg-white);
 }
 
 .projects-grid {
@@ -874,6 +965,20 @@ body {
     .timeline-item {
         flex-direction: row !important;
         margin-left: 2rem;
+    }
+
+    /* Education Section Mobile */
+    .education-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .education-item {
+        padding: 2rem;
+    }
+
+    .education-degree {
+        font-size: 1.1rem;
     }
 
     .timeline-dot {
